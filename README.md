@@ -2,9 +2,7 @@
 
 [Cppm](https://injae.github.io/cppm/) ***(BETA)*** [Documents](https://injae.github.io/cppm/)
 ========
-|Linux|Windows|MacOS|
-|:----|:------|:----|
-![Linux](https://github.com/injae/cppm/workflows/Linux/badge.svg) | ![Windows](https://github.com/injae/cppm/workflows/Windows/badge.svg) | ![MacOS](https://github.com/injae/cppm/workflows/MacOS/badge.svg) |
+![Linux](https://github.com/injae/cppm/workflows/Linux/badge.svg) ![Windows](https://github.com/injae/cppm/workflows/Windows/badge.svg) ![MacOS](https://github.com/injae/cppm/workflows/MacOS/badge.svg) 
 
 ![](cppm_demo.gif)
 

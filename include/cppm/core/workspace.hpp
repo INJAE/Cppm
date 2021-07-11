@@ -9,7 +9,7 @@
 
 namespace cppm::core {
     struct Workspace {
-        DERIVE_SERDE(Workspace, (&Self::member, "member", make_optional{}).no_remain())
+        DERIVE_SERDE(Workspace, (&Self::member, "member", make_optional).no_remain())
         std::vector<std::string> member;
     };
 }

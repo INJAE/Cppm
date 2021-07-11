@@ -9,7 +9,7 @@
 namespace cppm::core {
     struct Compiler {
         DERIVE_SERDE(Compiler,
-                     (&Self::version, "version", value_or_struct_se{})
+                     (&Self::version, "version", value_or_struct)
                      (&Self::option,  "option")
                      )
         std::string version;

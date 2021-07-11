@@ -17,14 +17,14 @@ namespace cppm::core {
 
     struct Dependency {
         DERIVE_SERDE(Dependency,
-                     (&Self::version,    "version",  value_or_struct_se{})
+                     (&Self::version,    "version",  value_or_struct)
                      (&Self::description, "description", default_se{""})
                      (&Self::type,       "type",     default_se{cppkg_type::lib})
                      (&Self::repo,       "repo",     default_se{repo_type::cppkg})
-                     (&Self::link,       "link",     default_se{link_type::PRIVATE}, enum_toupper{})
+                     (&Self::link,       "link",     default_se{link_type::PRIVATE}, to_lower)
                      (&Self::module,     "module")
-                     (&Self::features,   "feature-map", make_optional{})
-                     (&Self::default_feature, "features", make_optional{})
+                     (&Self::features,   "feature-map", make_optional)
+                     (&Self::default_feature, "features", make_optional)
                      (&Self::default_features_flag, "default_features", default_se{true})
                      (&Self::custom,     "custom",   default_se{false})
                      (&Self::no_cmake,   "no_module",default_se{false})

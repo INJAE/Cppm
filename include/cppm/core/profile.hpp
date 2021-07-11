@@ -9,8 +9,8 @@
 namespace cppm::core {
     struct Profile {
         DERIVE_SERDE(Profile,
-                     (&Self::package,  "package",  make_optional{})
-                     (&Self::compiler, "compiler", make_optional{})
+                     (&Self::package,  "package",  make_optional)
+                     (&Self::compiler, "compiler", make_optional)
                      )
         std::map<std::string, Profile> package;
         std::map<std::string, Compiler> compiler;

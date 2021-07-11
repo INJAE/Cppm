@@ -9,8 +9,8 @@
 namespace cppm::core {
     struct Target {
         DERIVE_SERDE(Target,
-                     (&Self::dependencies,     "dependencies",     make_optional{})
-                     (&Self::dev_dependencies, "dev-dependencies", make_optional{})
+                     (&Self::dependencies,     "dependencies",     make_optional)
+                     (&Self::dev_dependencies, "dev-dependencies", make_optional)
                      .no_remain()
                      )
 

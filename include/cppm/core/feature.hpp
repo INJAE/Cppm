@@ -18,9 +18,9 @@ namespace cppm::core {
             using namespace serde::attribute;
             using Self = Feature;
             serde::serde_struct(context, value)
-                (&Self::key,   "key",   value_or_struct_se{})
-                (&Self::value, "value", skip_se{})
-                (&Self::type,  "type",  skip_se{});
+                (&Self::key,   "key",   value_or_struct)
+                (&Self::value, "value", skip)
+                (&Self::type,  "type",  skip);
             if constexpr(Context::is_serialize) {
                 if(value.key[0] == '$') {
                     value.type = FeatureType::CMAKE_FLAG;
